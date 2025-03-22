@@ -1,0 +1,119 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0px;
+    font-family: 'GT America Standard', 'sans sherif';
+}
+
+.topbar{
+    background-color: black;
+    color: white;
+    height: 85px;
+    display: grid;
+    grid-template-columns: auto auto;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+
+.topbar_left {
+    display: grid;
+    place-items: center;
+}
+.topbar_right {
+    display: grid;
+    place-items: center;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    column-gap: 10px;
+}
+
+.topbar_left_container{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.topbar_left_container a:hover{
+    text-decoration: underline;
+}
+
+.topbar_right > input{
+    outline: none;
+    border: none;
+    font-size: 24px;
+    margin: 12px;
+    padding: 12px 12px 12px 20px;
+    border-radius: 10px;
+}
+
+.topbar_right > input:focus{
+    outline: none;
+}
+
+input::placeholder{
+    font-size: 24px;
+    font-weight: lighter;
+}
+
+.topbar_logo{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.topbar_right a{
+    border: 1px solid;
+    padding: 10px 25px;
+    border-radius: 10px;
+}
+
+a[href="signin"]{
+    background-color: #4C5FD5;
+    outline: none;
+    border: none;
+    transition: 200ms;
+}
+
+a[href="signin"]:hover{
+    color: black;
+    background-color: white;
+
+}
+.topbar a{
+    text-decoration: none;
+    color:white;
+}
+
+.hero-section{
+    height: 55vh;
+    background-color: #dadbf1;
+}
+
+
+
+
+.hero-section{
+    display:grid;
+    place-content: center;
+}
+
+.hero-unit-title{
+    font-size: 80px;
+    text-align: center;
+    margin: 0px 0px 16px;
+}
+
+.hero-unit > input{
+    padding: 16px;
+    font-size: 24px;
+    width: 750px;
+    border-radius: 5px;
+    outline: none;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);;
+    border: 1px solid;
+}
+
+.hero-unit > input:focus{
+    border: 1px solid blue;
+}
